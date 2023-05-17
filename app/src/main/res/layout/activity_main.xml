@@ -13,11 +13,12 @@
         android:layout_height="wrap_content">
 
         <TextView
+            android:id="@+id/linebar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="230dp"
-            android:text="Login"
+            android:text="@string/login"
             android:textColor="@color/black"
             android:textSize="34sp"
             android:textStyle="bold" />
@@ -30,22 +31,19 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
             android:layout_marginEnd="60dp"
-            app:boxStrokeColor="#ffcd19"
-            app:hintTextColor="@color/black"
-            >
+            app:boxStrokeColor="@color/Primary"
+            app:hintTextColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/inputEmail"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
-                android:hint="Email"
+                android:hint="@string/email"
                 android:inputType="textEmailAddress"
                 android:drawableStart="@drawable/baseline_email_24"
-                android:drawablePadding="10dp"
-                >
+                android:drawablePadding="5dp" />
 
-            </com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -58,7 +56,7 @@
             android:layout_marginStart="60dp"
             android:layout_marginEnd="60dp"
             app:passwordToggleEnabled="true"
-            app:boxStrokeColor="#ffcd19"
+            app:boxStrokeColor="@color/Primary"
             app:hintTextColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -66,12 +64,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
-                android:hint="Password"
+                android:hint="@string/password"
                 android:inputType="textPassword"
                 android:drawableStart="@drawable/baseline_lock_open_24"
-                android:drawablePadding="10dp"
-                >
-            </com.google.android.material.textfield.TextInputEditText>
+                android:drawablePadding="5dp" />
+
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
@@ -80,27 +77,28 @@
             android:layout_width="250dp"
             android:layout_height="50dp"
             android:layout_marginTop="40dp"
-            android:backgroundTint="#ffcd19"
+            android:backgroundTint="@color/Primary"
             android:layout_centerHorizontal="true"
-            android:text="Login"
+            android:text="@string/sign_in"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnRegister"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:backgroundTint="#00FFFFFF"
             android:layout_below="@id/btnLogin"
-            android:layout_centerHorizontal="true"
-            android:text="Register"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#00000000"
             android:textColor="@color/black"
-            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/sign_up"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:padding="12dp" />
+            android:textStyle="normal" />
+
+
+
 
     </RelativeLayout>
 
