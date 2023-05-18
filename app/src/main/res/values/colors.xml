@@ -7,7 +7,7 @@
     <color name="PrimaryLight">#E9F8F1</color>
     <color name="Accent">#333333</color>
     <color name="Background">#EBEBEB</color>
-    <color name="TrendingStart">#00B09B</color>
-    <color name="TrendingEnd">#96C93D</color>
-    <color name="Divider">#D6D6D6</color>
+    <color name="TrendingStart">#ffb300</color>
+    <color name="TrendingEnd">#ff8000</color>
+    <color name="Divider">#E6E3E3</color>
 </resources>
