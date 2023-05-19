@@ -403,31 +403,32 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <Button
-                android:id="@+id/button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="24dp"
-                android:backgroundTint="#ff8103"
-                android:text="Edit Profile"
-                android:textColor="@color/White"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                />
+<!--            <Button-->
+<!--                android:id="@+id/button"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:layout_marginStart="24dp"-->
+<!--                android:layout_marginEnd="24dp"-->
+<!--                android:backgroundTint="#ff8103"-->
+<!--                android:text="Edit Profile"-->
+<!--                android:textColor="@color/White"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textStyle="bold"-->
+<!--                />-->
 
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/bottomNavigationView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
                 android:backgroundTint="@color/White"
                 app:itemIconSize="30dp"
                 app:itemIconTint="@color/menu_bottom_navigation"
                 app:labelVisibilityMode="unlabeled"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:menu="@menu/navigation_menu"
-                />
+                app:menu="@menu/navigation_menu" />
+
             <View
                 android:id="@+id/viewDivinder"
                 android:layout_width="match_parent"
@@ -435,6 +436,7 @@
                 android:background="@color/Divider"
                 app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
                 />
+
 
         </LinearLayout>
     </ScrollView>

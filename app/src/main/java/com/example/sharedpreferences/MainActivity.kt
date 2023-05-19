@@ -6,15 +6,12 @@ import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import androidx.fragment.app.Fragment
 import com.example.sharedpreferences.databinding.ActivityMainBinding
-import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var sharedPrefs: SharedPreferences
     private lateinit var dbHelper: UserDbHelper
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,14 +29,15 @@ class MainActivity : AppCompatActivity() {
                 val user = dbHelper.getUser(email, password)
 
                 if (user != null) {
-                    val intent = Intent(this, HomeActivity::class.java)
-
                     with(sharedPrefs.edit()) {
                         putInt("user_id", user.id)
                         putString("user_email", user.email)
                         putString("user_password", user.password)
+                        putString("user_name", user.userName) // Menyimpan nama pengguna
                         apply()
                     }
+
+                    val intent = Intent(this, HomeActivity::class.java)
                     startActivity(intent)
                     finish()
                 } else {
@@ -56,4 +54,3 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
-
