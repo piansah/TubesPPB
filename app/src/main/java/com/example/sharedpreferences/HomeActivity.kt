@@ -25,7 +25,7 @@ class HomeActivity : AppCompatActivity() {
 
         val userName = sharedPrefs.getString("user_name", "")
 
-        binding.textHello.text = "Hello ${userName.toString()}"
+        binding.textHello.text = "Hello${userName.toString()}"
 
         loadFragment(HomeActivity())
         bottomNav = findViewById(R.id.bottomNavigationView) as BottomNavigationView
